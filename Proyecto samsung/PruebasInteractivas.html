@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="/PruebasIT.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Interactive Quiz</h1>
+        <div id="quiz">
+            <div class="question">
+                <p>{{ pregunta.pregunta }}</p>
+                <div class="options" id="options_{{ idx }}">
+                
+                    <label>
+                        <input type="radio" name="pregunta_{{ idx }}" value="{{ opcion }}">
+                    </label><br>
+                    
+                </div>
+            </div>
+            
+        </div>
+        <button id="submit">Submit</button>
+        <div id="result"></div>
+    </div>
+</body>
+<script src="/PruebaIT.js"></script>
+
+</html>

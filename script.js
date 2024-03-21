@@ -5,11 +5,12 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
     var password = document.getElementById('password').value;
 
     // Verificar las credenciales
-    if (username === 'estudiante' && password === '123') {
-        // Redirigir a la página de inicio después de iniciar sesión
-        window.location.href = 'dashboard.html'; // Cambia aquí a la página de dashboard
-    } else {
-        // Mostrar mensaje de error si las credenciales son incorrectas
+    if (username === 'admin' && password === 'admin') {
+        window.location.href = 'Pag admin.html'; 
+      } else if (username === 'User' && password === '1234') {
+        window.location.href = 'Pag user.html'; 
+      } else {
         document.getElementById('error-msg').innerText = 'Credenciales incorrectas. Por favor, intente de nuevo.';
-    }
+      }
 });
+

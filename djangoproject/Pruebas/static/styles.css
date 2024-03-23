@@ -1,57 +1,200 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 400px;
+  margin: 100px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:focus {
+  outline: none;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+ul {
+  background-color: #343a40;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  list-style: none;
+  gap: 40px;
+  margin-top: 0;
+  flex-direction: row;
+}
+
+nav img {
+  height: 40px;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    /* display: none; */
+    flex-direction: column;
   }
-  
-  .container {
-    max-width: 400px;
-    margin: 100px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  h2 {
-    text-align: center;
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  label {
+
+  .menu-icon {
     display: block;
-    font-weight: bold;
-  }
-  
-  input[type="text"],
-  input[type="password"],
-  select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
   }
-  
-  button:hover {
-    background-color: #0056b3;
+
+  .menu-icon:hover {
+    color: #ccc;
   }
-  
-  button:focus {
-    outline: none;
+
+  .menu-icon.active+.menu {
+    display: flex;
   }
-  
+}
+
+.contenido {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.foto_cont img {
+  width: 100%;
+  height: auto;
+  border-radius: 10%;
+  max-width: 300px;
+}
+
+.informacion {
+  max-width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.galeria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.imagen {
+  width: 200px;
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.imagen img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.imagen img:hover {
+  transform: scale(1.1);
+}
+
+/* Estilos para la sección del estudiante */
+.seccion-estudiante {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.foto-estudiante img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.info-estudiante {
+  flex: 1;
+  padding-left: 20px;
+}
+
+/* Estilos para el registro del quiz */
+.registro-quiz {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.registro-quiz h2 {
+  margin-bottom: 10px;
+}

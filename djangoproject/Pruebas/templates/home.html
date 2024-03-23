@@ -1,4 +1,67 @@
 {% extends "base.html" %} {% block content %}
-<h1>HOME</h1>
-<p>Hola Yansel</p>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barra de Navegación</title>
+    <link rel="stylesheet" href="../static/styles.css" />
+  </head>
+
+  <body>
+    <div class="contenido">
+      <div class="foto_cont">
+        <img
+          src="../../img/relacao-professor-e-aluno-como-compartilhar-conhecimento-de-verdade.jpeg"
+          alt="Foto"
+        />
+      </div>
+      <div class="informacion">
+        <h2>Información de la Página</h2>
+        <p>
+          Somos un equipo comprometido para ayudar a los estudiantes a mejorar
+          sus calificaciones.
+        </p>
+      </div>
+    </div>
+
+    <div class="galeria">
+      <div class="imagen">
+        <img
+          src="../img/grupo-multietnico-jovenes-estudiantes-felices-pie-al-aire-libre_171337-11812.avif"
+          alt="Imagen 1"
+        />
+      </div>
+      <div class="imagen">
+        <img
+          src="../img/jovenes-fila-pulgares-arriba_1098-2557.avif"
+          alt="Imagen 2"
+        />
+      </div>
+      <div class="imagen">
+        <img
+          src="../img/ninos-felices-manos-alto-pie-cerca-escuela-al-aire-libre_650366-3271.avif"
+          alt="Imagen 3"
+        />
+      </div>
+    </div>
+    <!-- Sección del estudiante -->
+    <div class="seccion-estudiante">
+      <div class="foto-estudiante">
+        <img src="../img/fotograduacion.webp" alt="Foto del Estudiante" />
+      </div>
+      <div class="info-estudiante">
+        <h2>Promedio del Estudiante</h2>
+        <p>Promedio: 3.8</p>
+      </div>
+    </div>
+
+    <!-- Registro del quiz -->
+    <div class="registro-quiz">
+      <h2>Registro del Quiz</h2>
+      <p>Resultado del último quiz: X%</p>
+      <p>Total de materias: X</p>
+    </div>
+  </body>
+</html>
 {% endblock %}
